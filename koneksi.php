@@ -2,6 +2,6 @@
     $server = "localhost";
     $user = "root";
     $password = "";
-    $database = "input_form";
+    $database = "formdata";
 
     $koneksi = mysqli_connect($server, $user, $password, $database) OR DIE ("Koneksi Gagal");

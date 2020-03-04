@@ -1,4 +1,5 @@
 <?php
+        include_once('koneksi.php');
 
         $nama = $_GET['nama'];
         $ktp = $_GET['ktp'];
@@ -7,12 +8,7 @@
         $agama = $_GET['agama'];
         $email = $_GET['email'];
         $jk = $_GET['formjk'];
+
+        mysqli_query($koneksi, "INSERT INTO tb_formdata (nama,noidnts,tgl_lahir,alamat,agama,email,jk) VALUES ('$nama','$ktp','$tgl','$alamat','$agama','$email','$jk')");
        
-        echo "ini data";
-       echo $nama. "<br/>";
-       echo $ktp. "<br/>";
-       echo $tgl. "<br/>";
-       echo $alamat. "<br/>";
-       echo $agama. "<br/>";
-       echo $email. "<br/>";
-       echo $jk. "<br/>";
+     
