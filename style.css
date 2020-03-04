@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.judulbody {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.judul h2 {
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+
+.btn {
+    background-color: rgb(7, 171, 247);
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.formborder {
+    margin-left: 180px;
+    margin-right: 180px;
+    border-radius: px;
+    border: 3px solid gray;
+    box-shadow: 10px 10px #b9b3b3;
+    background-color: white;
+}
+
+.form {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.myINPUT {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.button input {
+    overflow: visible;
+    display: none;
+}
