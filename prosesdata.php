@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>  
-<head>
-          
-</head>
-<body>
+
         <?php
         include_once('koneksi.php');
 
@@ -18,10 +13,5 @@
         mysqli_query($koneksi, "INSERT INTO tb_formdata (nama,noidnts,tgl_lahir,alamat,agama,email,jk) VALUES ('$nama','$ktp','$tgl','$alamat','$agama','$email','$jk')");
         
       
-      // header("location : index.php");
-      ?>
-      <a href="index.php">Ke database</a>
-
-</body>
-      
-</html>
+        header("location:index.php");
+    

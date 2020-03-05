@@ -57,7 +57,7 @@
 
             </table>
 
-            <a href="formdata.php" class="btn">Tambah Data</a>
+            <a href="formdata.php" class="btn btn-success">Tambah Data</a>
         </div>
     </div>
 </div>

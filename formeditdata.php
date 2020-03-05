@@ -93,7 +93,7 @@
 
 
                     <input class="myINPUT" id="myInput" value="Hasil Input Yaitu :">
-                    <button type="submit" onclick="getInputValue();" class="btn">Kirim Identitas</button>
+                    <button type="submit" onclick="getInputValue();" class="btn btn-success">Kirim Identitas</button>
                     <script src="animate.js"></script>
                 </form>
 

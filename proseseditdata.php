@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>  
-<head>
-          
-</head>
-<body>
 
         <?php
         include_once('koneksi.php');
@@ -26,10 +20,5 @@
                                                         alamat = '$alamat', agama = '$agama', email = '$email',
                                                         jk = '$jk' WHERE id = '$id'");
    
-      // header("location : formdata.php");
-      ?>
-      <a href="index.php">Ke database</a>
-
-</body>
-      
-</html>
+        header("location:index.php");
+ 
