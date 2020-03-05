@@ -37,7 +37,7 @@
                 echo "<td>$row[agama]</td>";
                 echo "<td>$row[email]</td>";
                 echo "<td>$row[jk]</td>";
-                echo "<td>$nbsp</td>";
+                echo "<td><a href='formeditdata.php?id=$row[id]'>Edit</a></td>";
 
                 $no++;
 

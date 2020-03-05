@@ -19,7 +19,7 @@
                 <h2>Form Pengisian Identitas</h2>
                 <h5>Silahkan masukkan identitas Anda</h5>
                 <br><br>
-
+                
                 <form action="prosesdata.php" methode="GET">
                     <div class="formborder">
                         <div class="form text-left">

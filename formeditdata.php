@@ -2,6 +2,8 @@
     include_once('koneksi.php');
 
     $id = $_GET['id'];
+  //  echo $_GET['id'];
+
     $query = mysqli_query($koneksi, "SELECT * FROM tb_formdata WHERE id='$id'");
     $row = mysqli_fetch_array($query);
 ?>
@@ -27,15 +29,19 @@
                 <h2>Form Pengisian Identitas</h2>
                 <h5>Silahkan masukkan identitas Anda</h5>
                 <br><br>
-
-                <form action="proseseditdata.php ?id=<?php echo $id; ?>" methode="GET">
+                <form action="proseseditdata.php" methode="GET">
                     <div class="formborder">
                         <div class="form text-left">
 
+
+                            <div class="form-group">
+                                <label for="form">Id Database </label>
+                                <input type="text" class="form-control" name="id" id="id" value="<?php echo $row['id'] ?>">
+                            </div>
+                            
                             <div class="form-group">
                                 <label for="form">Nama </label>
                                 <input type="text" class="form-control" name="nama" id="nama" value="<?php echo $row['nama'] ?>">
-
                             </div>
 
                             <div class="form-group">
