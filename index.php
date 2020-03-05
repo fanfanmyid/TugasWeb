@@ -39,7 +39,8 @@
                 echo "<td>$row[agama]</td>";
                 echo "<td>$row[email]</td>";
                 echo "<td>$row[jk]</td>";
-                echo "<td><a href='formeditdata.php?id=$row[id]'>Edit</a></td>";
+                echo "<td><a href='formeditdata.php?id=$row[id]'>Edit</a>
+                        <a href='prosesdeletedata.php?id=$row[id]'>Delete</a> </td>";
 
                 $no++;
 
