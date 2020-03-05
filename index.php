@@ -10,6 +10,8 @@
     <title>Baca Data</title>
 </head>
 <body>
+
+    <a href="formdata.php">Tambah Data</a>
     <table border="1px">
         <tr>
             <th>No</th>
