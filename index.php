@@ -19,7 +19,8 @@
                 <h2>List Isi Database</h2>
                 <h5>Silahkan gunakan menu yang tersedia</h5>
                 <br><br>
-            <table border="5px" class="table">
+            <table border="2px" class="table table-striped table-light">
+            <thead class="thead-dark">
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Nama</th>
@@ -31,13 +32,14 @@
                     <th scope="col">Jenis Kelamin</th>
                     <th scope="col">Action</th>
                 </tr>
+            </thead>
 
                 <?php
                     $query = mysqli_query($koneksi, 'SELECT * FROM tb_formdata');
 
                     $no = 1;
                     while($row=mysqli_fetch_array($query)){
-                        echo "<tr>";
+                        echo "<tr sccope='row'>";
                         echo "<td>$no </td>";
                         echo "<td>$row[nama]</td>";
                         echo "<td>$row[noidnts]</td>";
