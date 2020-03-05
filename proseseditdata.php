@@ -1,9 +1,15 @@
-<?php
+<!DOCTYPE html>
+<html>  
+<head>
+          
+</head>
+<body>
+
+        <?php
         include_once('koneksi.php');
-//  include_once('formeditdata.php');
-    
-   //     $id = 2;
-    //    echo $id;
+        //include_once('formeditdata.php');
+        //$id = 2;
+        //echo $id;
         $id = $_GET['id'];
         $nama = $_GET['nama'];
         $ktp = $_GET['ktp'];
@@ -15,9 +21,15 @@
        
         //perbaiki id karena belum terdefinisi oleh varibael di prosesedit.php sementara bisa diisi manual saja
 
+        
         mysqli_query($koneksi, "UPDATE tb_formdata SET nama = '$nama', noidnts = '$ktp', tgl_lahir = '$tgl',
                                                         alamat = '$alamat', agama = '$agama', email = '$email',
                                                         jk = '$jk' WHERE id = '$id'");
-       
+   
       // header("location : formdata.php");
-     
+      ?>
+      <a href="index.php">Ke database</a>
+
+</body>
+      
+</html>
