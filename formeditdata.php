@@ -1,11 +1,11 @@
 <?php
-    include_once('koneksi.php');
+include_once('koneksi.php');
 
-    $id = $_GET['id'];
-  //  echo $_GET['id'];
+$id = $_GET['id'];
+//  echo $_GET['id'];
 
-    $query = mysqli_query($koneksi, "SELECT * FROM tb_formdata WHERE id='$id'");
-    $row = mysqli_fetch_array($query);
+$query = mysqli_query($koneksi, "SELECT * FROM tb_formdata WHERE id='$id'");
+$row = mysqli_fetch_array($query);
 ?>
 
 <!DOCTYPE html>
@@ -35,10 +35,10 @@
 
 
                             <div class="form-group">
-                                <label for="form">Id Database </label>
-                                <input type="text" class="form-control" name="id" id="id" value="<?php echo $row['id'] ?>">
+                                <!-- <label for="form">Id Database </label> -->
+                                <input type="hidden" class="form-control" name="id" id="id" value="<?php echo $row['id'] ?>">
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="form">Nama </label>
                                 <input type="text" class="form-control" name="nama" id="nama" value="<?php echo $row['nama'] ?>">
@@ -56,7 +56,7 @@
 
                             <div class="form-group">
                                 <label for="form">Alamat Lengkap </label><br>
-                                <textarea class="form-control" name="alamat" rows="4" id="alamat" ><?php echo $row['alamat'] ?></textarea>
+                                <textarea class="form-control" name="alamat" rows="4" id="alamat"><?php echo $row['alamat'] ?></textarea>
                             </div>
 
                             <div class="form-group">
@@ -77,14 +77,12 @@
 
                             <label for="form"></label>Jenis Kelamin</label><br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="formjk" id="inlineRadio1"
-                                    value="Laki Laki">
-                                <label class="form-check-label" for="inlineRadio1" value="<?php echo $row['jk'] ?>" >Laki Laki</label>
+                                <input class="form-check-input" type="radio" name="formjk" id="inlineRadio1" value="Laki Laki">
+                                <label class="form-check-label" for="inlineRadio1" value="<?php echo $row['jk'] ?>">Laki Laki</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="formjk" id="inlineRadio2"
-                                    value="Perempuan">
-                                <label class="form-check-label" for="inlineRadio2" value="<?php echo $row['jk'] ?>" >Perempuan</label>
+                                <input class="form-check-input" type="radio" name="formjk" id="inlineRadio2" value="Perempuan">
+                                <label class="form-check-label" for="inlineRadio2" value="<?php echo $row['jk'] ?>">Perempuan</label>
                             </div><br><br>
 
                         </div>
