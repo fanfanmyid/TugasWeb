@@ -1,44 +1,36 @@
 <?php
-    include_once('koneksi.php');
+include_once('koneksi.php');
 ?>
+<?php include 'header.php'; ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baca Data</title>
-</head>
 <body>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 judul text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 judul text-center">
                 <h2>List Isi Database</h2>
                 <h5>Silahkan gunakan menu yang tersedia</h5>
                 <br><br>
-            <table border="2px" class="table table-striped table-light">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">No Identitas</th>
-                    <th scope="col">Tanggal Lahir</th>
-                    <th scope="col">Alamat</th>
-                    <th scope="col">Agama</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Jenis Kelamin</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
+                <table border="2px" class="table table-striped table-light">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">No Identitas</th>
+                            <th scope="col">Tanggal Lahir</th>
+                            <th scope="col">Alamat</th>
+                            <th scope="col">Agama</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Jenis Kelamin</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
 
-                <?php
+                    <?php
                     $query = mysqli_query($koneksi, 'SELECT * FROM tb_formdata');
 
                     $no = 1;
-                    while($row=mysqli_fetch_array($query)){
+                    while ($row = mysqli_fetch_array($query)) {
                         echo "<tr sccope='row'>";
                         echo "<td>$no </td>";
                         echo "<td>$row[nama]</td>";
@@ -52,16 +44,16 @@
                                 <a href='prosesdeletedata.php?id=$row[id]'>Delete</a> </td>";
 
                         $no++;
-
                     }
 
-                ?>
+                    ?>
 
-            </table>
+                </table>
 
-            <a href="formdata.php" class="btn btn-success">Tambah Data</a>
+                <a href="formdata.php" class="btn btn-success">Tambah Data</a>
+            </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>

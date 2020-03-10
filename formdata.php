@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<?php include 'header.php'; ?>
 
 <head>
     <title>Form Identitas </title>
@@ -19,7 +20,7 @@
                 <h2>Form Pengisian Identitas</h2>
                 <h5>Silahkan masukkan identitas Anda</h5>
                 <br><br>
-                
+
                 <form action="prosesdata.php" methode="GET">
                     <div class="formborder">
                         <div class="form text-left">
@@ -63,13 +64,11 @@
 
                             <label for="form"></label>Jenis Kelamin</label><br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="formjk" id="inlineRadio1"
-                                    value="Laki Laki">
+                                <input class="form-check-input" type="radio" name="formjk" id="inlineRadio1" value="Laki Laki">
                                 <label class="form-check-label" for="inlineRadio1">Laki Laki</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="formjk" id="inlineRadio2"
-                                    value="Perempuan">
+                                <input class="form-check-input" type="radio" name="formjk" id="inlineRadio2" value="Perempuan">
                                 <label class="form-check-label" for="inlineRadio2">Perempuan</label>
                             </div><br><br>
 
