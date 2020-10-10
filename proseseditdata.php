@@ -3,7 +3,7 @@
         include_once('koneksi.php');
         //include_once('formeditdata.php');
         //$id = 2;
-        //echo $id;
+        echo $id;
         $id = $_GET['id'];
         $nama = $_GET['nama'];
         $ktp = $_GET['ktp'];
